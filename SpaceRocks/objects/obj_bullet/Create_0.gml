@@ -1,0 +1,1 @@
+speed = bullet_fly_speed;
