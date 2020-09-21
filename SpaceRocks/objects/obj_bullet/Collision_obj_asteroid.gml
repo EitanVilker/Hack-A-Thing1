@@ -1,5 +1,6 @@
 // Destroy bullet
 instance_destroy();
+score += 10;
 
 // other is a special keyword for collisions. Refers to whatever was collided with
 // with statement has whatever is referenced in the round brackets call the relevant code
@@ -11,7 +12,7 @@ with(other) {
 	if (sprite_index == spr_asteroid_large) {
 		repeat(2) {
 			var new_asteroid = instance_create_layer(x, y, "Instances", obj_asteroid);
-			new_asteroid.sprite_index = spr_asteroid_med;
+			new_asteroid.sprite_index = spr_asteroid_medium;
 		}
 		
 	} else if (sprite_index == spr_asteroid_medium) {
@@ -20,9 +21,9 @@ with(other) {
 			new_asteroid.sprite_index = spr_asteroid_small;
 		}
 		
-	} else {
-		
+	} 
+	
+	repeat(10) {
+		instance_create_layer(x, y, "Instances", obj_debris);
 	}
-	
-	
 }
