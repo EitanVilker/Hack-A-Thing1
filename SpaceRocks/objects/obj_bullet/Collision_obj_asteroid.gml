@@ -1,6 +1,7 @@
 // Destroy bullet
 instance_destroy();
 score += 10;
+audio_play_sound(snd_die, 1, false);
 
 // other is a special keyword for collisions. Refers to whatever was collided with
 // with statement has whatever is referenced in the round brackets call the relevant code

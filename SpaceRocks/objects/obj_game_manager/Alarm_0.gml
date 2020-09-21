@@ -1,7 +1,9 @@
+/// @description Spawn asteroids
 // Periodic asteroid spawning
 // 50-50 for whether we spawn along sides or along top/bottom
+
 if (room != rm_game) {
-	exit; // After exiting, this script will no longer run.
+	exit; // Exiting terminates. Keeps new asteroids from spawning
 }
 
 if (choose(0, 1) == 0) {
