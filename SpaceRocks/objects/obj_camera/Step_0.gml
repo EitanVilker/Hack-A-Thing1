@@ -11,6 +11,17 @@ if (instance_exists(target)){
 }
 camera_set_view_pos(view_camera[0], global.cam_X, global.cam_Y)
 
+// Have background layers move relative to player.
+// The closer the multiplier is to 1, the closer it is to being static
 // Using the layer name is worse for performance. Layer ID is better
-layer_x("Background", global.cam_X * 0.9);
-layer_y("Background", global.cam_Y * 0.9);
+layer_x("Parallax_0", global.cam_X * 0.9);
+layer_y("Parallax_0", global.cam_Y * 0.9);
+
+layer_x("Parallax_1", global.cam_X * 0.8);
+layer_y("Parallax_1", global.cam_Y * 0.8);
+
+layer_x("Parallax_2", global.cam_X * 0.7);
+layer_y("Parallax_2", global.cam_Y * 0.7);
+
+layer_x("Parallax_3", global.cam_X * 0.98);
+layer_y("Parallax_3", global.cam_Y * 0.98);

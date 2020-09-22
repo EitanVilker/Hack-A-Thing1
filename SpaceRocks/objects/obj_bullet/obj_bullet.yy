@@ -22,16 +22,14 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"parent":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"parent":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":1,"value":"6","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"bullet_fly_speed","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy",
+    "path": "folders/Objects/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bullet",

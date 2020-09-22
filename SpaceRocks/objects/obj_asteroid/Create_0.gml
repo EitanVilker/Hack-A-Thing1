@@ -1,5 +1,8 @@
 /// @description Asteroid initialization
 
+// Runs inhereted Create event
+event_inherited();
+
 sprite_index = choose(
 	spr_asteroid_large,
 	spr_asteroid_medium,

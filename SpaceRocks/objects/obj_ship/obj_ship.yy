@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_faction_ally",
+    "path": "objects/obj_faction_ally/obj_faction_ally.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,7 +25,10 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"parent":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"parent":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"parent":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":1,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ship_turn_speed","tags":[],"resourceType":"GMObjectProperty",},
@@ -30,8 +36,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Faction Ally",
+    "path": "folders/Objects/Faction Ally.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ship",

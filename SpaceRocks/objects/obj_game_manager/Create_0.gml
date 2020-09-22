@@ -12,3 +12,10 @@ draw_set_font(fnt_text);
 // By default, Gamemaker sets a random seed for random generation.
 // The game follows it each time unless we run randomize()
 randomize();
+
+// Enumerators are global, contain the variables within
+enum factions {
+	neutral,
+	ally,
+	enemy
+}

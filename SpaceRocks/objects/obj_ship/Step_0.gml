@@ -16,13 +16,7 @@ if (keyboard_check(vk_up)) {
 // Shoot bullet
 // Activated once per press of the spacebar
 if (keyboard_check_pressed(vk_space)) {
-	// Every sprite has x,y instance variables
-	// Create bullet in the instances layer
-	// Returns ID of the created object
-	// var makes inst a local variable, discarded at end of script 
-	var inst =  instance_create_layer(x, y, "Instances", obj_bullet);
-	inst.direction = image_angle;
-	audio_play_sound(snd_zap, 1, false);
+	scr_create_bullet(image_angle, bullet_speed, faction);
 }
 
 // Wrap around at edges
