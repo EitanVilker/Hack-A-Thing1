@@ -10,3 +10,7 @@ if (instance_exists(target)){
 	global.cam_Y = clamp(global.cam_Y, 0, room_height-global.cam_height);
 }
 camera_set_view_pos(view_camera[0], global.cam_X, global.cam_Y)
+
+// Using the layer name is worse for performance. Layer ID is better
+layer_x("Background", global.cam_X * 0.9);
+layer_y("Background", global.cam_Y * 0.9);
