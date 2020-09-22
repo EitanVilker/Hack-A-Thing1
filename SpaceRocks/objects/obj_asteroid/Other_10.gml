@@ -20,7 +20,8 @@ if (sprite_index == spr_asteroid_large) {
 	}
 		
 } 
-	
+
+// Make debris
 repeat(10) {
 	instance_create_layer(x, y, "Instances", obj_debris);
 }
