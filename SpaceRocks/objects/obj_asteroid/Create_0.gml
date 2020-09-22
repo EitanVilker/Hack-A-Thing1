@@ -1,3 +1,5 @@
+/// @description Asteroid initialization
+
 sprite_index = choose(
 	spr_asteroid_large,
 	spr_asteroid_medium,

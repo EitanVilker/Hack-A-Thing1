@@ -1,13 +1,11 @@
-// Manages the events ocurring within the game
-
-show_debug_message("LIVES: "+string(lives));
-show_debug_message("SCORE: "+string(score));
+/// @description Game setup
 
 // score & lives are built-in global variables in gamemaker
 // Score is initialized to 0. Lives are initialized to -1.
 if (lives == -1) {
 	lives = 3;
 }
+score = 0;
 
 draw_set_font(fnt_text);
 

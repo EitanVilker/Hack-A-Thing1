@@ -6,17 +6,6 @@ if (room != rm_game) {
 	exit; // Exiting terminates. Keeps new asteroids from spawning
 }
 
-if (choose(0, 1) == 0) {
-	// Spawn along side
-	var xx = choose(0, room_width);
-	var yy = irandom_range(0, room_height);
-	
-} else {
-	// Spawn along top/bottom
-	var yy = choose(0, room_width);
-	var xx = irandom_range(0, room_height);
-}
+scr_spawn_off_camera(obj_asteroid, 1);
 
-instance_create_layer(xx, yy, "Instances", obj_asteroid);
-
-alarm[0] = room_speed * 4; // Reset the alarm
+alarm[0] = room_speed * 1; // Reset the alarm
