@@ -1,6 +1,6 @@
 ///@description Collision checks
 
-if(other == creator) {
+if(other.id == creator) {
 	exit;
 }
 

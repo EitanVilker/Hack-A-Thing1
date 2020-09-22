@@ -16,7 +16,7 @@ if (keyboard_check(vk_up)) {
 // Shoot bullet
 // Activated once per press of the spacebar
 if (keyboard_check_pressed(vk_space)) {
-	scr_create_bullet(image_angle, bullet_speed, faction);
+	scr_create_bullet(image_angle, bullet_speed, faction, id);
 }
 
 // Wrap around at edges

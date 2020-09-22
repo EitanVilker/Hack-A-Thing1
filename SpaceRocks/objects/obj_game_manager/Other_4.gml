@@ -10,5 +10,8 @@ if (room == rm_game) {
 	
 	scr_spawn_off_camera(obj_asteroid, 40);
 	
-	alarm[0] = room_speed * 4; // room_speed is the game's FPS. Alarm 0 is set to run after 4 seconds
+	// room_speed is the game's FPS
+	// Alarm 0 is set to run after 4 seconds
+	// Begin spawning asteroids
+	alarm[0] = room_speed * 4; 
 }

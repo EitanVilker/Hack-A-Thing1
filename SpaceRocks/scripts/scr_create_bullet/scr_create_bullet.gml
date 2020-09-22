@@ -2,7 +2,8 @@
 /// @param {_dir} direction to shoot
 /// @param {_spd} bullet speed
 /// @param {_fac} faction
-function scr_create_bullet(_dir, _spd, _fac){
+/// @param {_cre} creator
+function scr_create_bullet(_dir, _spd, _fac, _cre){
 	audio_play_sound(snd_zap, 1, false);
 	
 	// Pass this along so the bullet knows who made it
@@ -18,9 +19,9 @@ function scr_create_bullet(_dir, _spd, _fac){
 		direction = _dir;
 		speed = _spd;
 		faction = _fac;
-		creator = _creator;
+		creator = _cre;
+		
+		if (faction == factions.ally) { image_blend = c_aqua; }
+		else if (faction == factions.enemy) { image_blend = c_red; }
 	}
-	
-	inst.direction = image_angle;
-	
 }
